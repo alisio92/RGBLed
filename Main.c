@@ -1,6 +1,5 @@
 #include <stdbool.h>
 #include <stdio.h>
-#include <share.h>
 #include <signal.h>
 #include <string.h>
 #include <stdlib.h>
@@ -61,7 +60,7 @@ int on_alarm()
 }
 
 int random(){
-	FILE *stream;
+	/*FILE *stream;
 	if ((stream = _fsopen("outfile.txt", "wt", _SH_DENYWR)) != NULL)
 	{
 		for (int i = 0; i < 9; i++){
@@ -87,7 +86,7 @@ int random(){
 		}
 		fclose(stream);
 	}
-	system("type outfile.txt");
+	system("type outfile.txt");*/
 	return -1;
 }
 
