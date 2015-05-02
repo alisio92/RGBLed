@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+#wrapper {
+  width: 960px;
+  margin: auto;
+}
+button {
+  width: 100px;
+  height: 20px;
+}
+.RGB {
+  width: 100px;
+  height: 20px;
+}
+#aanuit {
+  float: left;
+  width: 950px;
+  height: 60px;
+  margin: 10px 0px 0px 10px;
+}
+#aanuit > button {
+  margin: 10px 0px 0px 10px;
+}
+#rgb {
+  float: left;
+  width: 950px;
+  height: 60px;
+  margin: 10px 0px 0px 10px;
+}
+#rgb > button {
+  margin: 10px 0px 0px 10px;
+}
+#functies {
+  float: left;
+  width: 950px;
+  height: 60px;
+  margin: 10px 0px 0px 10px;
+}
+#functies > button {
+  margin: 10px 0px 0px 10px;
+}
+#appart {
+  float: left;
+  width: 950px;
+  height: 300px;
+  margin: 10px 0px 0px 10px;
+}
+#appart > button {
+  margin: 10px 0px 0px 10px;
+}
+#appart > ul {
+  margin: 10px 0px 10px 10px;
+}
+#appart > ul > li {
+  list-style: none;
+}
+#appart > ul > li > .btn {
+  width: 100px;
+  height: 20px;
+}
+#rgb-color {
+  float: left;
+  width: 950px;
+  height: 60px;
+  margin: 10px 0px 0px 10px;
+}
+#rgb-color > button {
+  margin: 10px 0px 0px 10px;
+}
+#rgb-color > label {
+  margin: 0px 0px 0px 10px;
+}
