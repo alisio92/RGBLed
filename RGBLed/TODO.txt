@@ -1,0 +1,47 @@
+alisio
+sessies
+powerpoint
+planning
+Taakverdeling
+documentatie updaten
+
+bryan
+inleiding lezen en toevoegen
+Technologieën > Raspberry Pi aanvullen
+Technologieën > LED strip
+Libraries
+C
+C++
+Python
+Benodigde informatie
+Handleiding >Installatie
+
+
+Samenvatting
+
+
+planning
+week 1
+Instalatie, libraries, testen
+
+week2
+Leds kunnen aansturen van de Raspberry Pi
+
+week3
+Eerste script met variabelen
+
+wee4
+connectie wep app met C
+
+effectief
+week 1
+Instalatie, libraries, testen, tableflip
+
+week2
+van scratch begonnen, alles opnieuw installeren
+
+week3
+Eerste script met variabelen
+
+wee4
+connectie wep app met C
