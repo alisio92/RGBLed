@@ -27,9 +27,9 @@ include('functions/functions.php');
         <fieldset id="functies">
             <legend>Basis Functies</legend>
             <button type="submit" name="buttonKnipperLed">Knipper Led</button>
-            <button type="submit" name="buttonKnipperLeds">Knipper Leds</button>
+            <button type="submit" name="buttonKnipperLeds">Knipper Led's</button>
             <button type="submit" name="buttonRandom">Random Color</button>
-            <button type="submit" name="buttoncolorknipper">Koller Knipper</button>
+            <button type="submit" name="buttoncolorknipper">Color Knipper</button>
             <button type="submit" name="buttonSchakelaar">Schakelaar</button>
         </fieldset>
 
@@ -51,7 +51,7 @@ include('functions/functions.php');
         </fieldset>
 
         <fieldset id="appart">
-            <legend>Leds Appart Aansturen</legend>
+            <legend>Led's Apart Aansturen</legend>
             <ul>
                 <?php for ($i = 1; $i < 10; $i++) { ?>
                     <li>
@@ -74,7 +74,7 @@ include('functions/functions.php');
                     </li>
                 <?php } ?>
             </ul>
-            <button type="submit" name="buttonAppart">Appart</button>
+            <button type="submit" name="buttonAppart">Apart</button>
             <button type="submit" name="buttonAppartRandom">Random</button>
         </fieldset>
     </form>
