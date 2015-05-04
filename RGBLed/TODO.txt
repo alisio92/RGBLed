@@ -1,15 +1,10 @@
 alisio
-sessies
-powerpoint
-planning
-Taakverdeling
 documentatie updaten
 ledstrip alternatieven
 planning
 taakverdeling
 samenvatting
 powerpoint
-sessies
 
 bryan
 ledstrip inleiding
@@ -17,6 +12,8 @@ Python
 planning
 taakverdeling
 samenvatting
+
+104 92 181
 
 
 planning

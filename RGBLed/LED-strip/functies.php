@@ -1,10 +1,19 @@
 <?php
-if (isset($_POST['buttonAan'])) $output= shell_exec("sudo ./Led1 AllesAan");
-if (isset($_POST['buttonUit'])) $output= shell_exec("sudo ./Led1 AllesUit");
-
-if (isset($_POST['buttonR'])) $output= shell_exec("sudo ./Led1 AllesRood");
-if (isset($_POST['buttonG'])) $output= shell_exec("sudo ./Led1 AllesGroen");
-if (isset($_POST['buttonB'])) $output= shell_exec("sudo ./Led1 AllesBlauw");
+if (isset($_POST['buttonAan'])) {
+    $output= shell_exec("sudo ./Led1 AllesAan");
+}
+if (isset($_POST['buttonUit'])) {
+    $output= shell_exec("sudo ./Led1 AllesUit");
+}
+if (isset($_POST['buttonR'])) {
+    $output= shell_exec("sudo ./Led1 AllesRood");
+}
+if (isset($_POST['buttonG'])) {
+    $output= shell_exec("sudo ./Led1 AllesGroen");
+}
+if (isset($_POST['buttonB'])) {
+    $output= shell_exec("sudo ./Led1 AllesBlauw");
+}
 
 if (isset($_POST['buttonRGB']))
 {
@@ -16,10 +25,18 @@ if (isset($_POST['buttonRGB']))
     if (!empty($_POST['colB'])) $b = $_POST['colB'];
     $output= shell_exec("sudo ./Led1 RGB $r $g $b");
 }
-if (isset($_POST['buttonKnipperLed'])) $output= shell_exec("sudo ./Led1 KnipperLed");
-if (isset($_POST['buttonKnipperLeds'])) $output= shell_exec("sudo ./Led1 KnipperLicht");
-if (isset($_POST['buttoncolorknipper'])) $output= shell_exec("sudo ./Led1 ColorKnipper");
-if (isset($_POST['buttonSchakelaar'])) $output= shell_exec("sudo ./Led1 Schakelaar");
+if (isset($_POST['buttonKnipperLed'])) {
+    $output= shell_exec("sudo ./Led1 KnipperLed");
+}
+if (isset($_POST['buttonKnipperLeds'])) {
+    $output= shell_exec("sudo ./Led1 KnipperLicht");
+}
+if (isset($_POST['buttoncolorknipper'])) {
+    $output= shell_exec("sudo ./Led1 ColorKnipper");
+}
+if (isset($_POST['buttonSchakelaar'])) {
+    $output= shell_exec("sudo ./Led1 Schakelaar");
+}
 
 if (isset($_POST['buttonRandom']))
 {

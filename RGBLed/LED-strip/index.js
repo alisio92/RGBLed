@@ -58,6 +58,7 @@ function paste(index){
     RGB = "";
     if(index!= 0) RGB = index;
     fChange(cValue, RGB);
+    localStorage.setItem("rgb" + index, cValue);
 }
 function rgbInit(){
     rgbList.push(rgb);
@@ -72,7 +73,9 @@ function rgbInit(){
     rgbList.push(rgb9);
     for(var i = 0; i < 10; i++){
         if(rgbList[i]!= null){
-            rgbList[i].value = "FFFFFF";
+            var t = localStorage.getItem("rgb" + i);
+            if(t== null) rgbList[i].value = "FFFFFF";
+            else rgbList[i].value = t;
             RGB = "";
             if(i!= 0) RGB = i;
             fChange(rgbList[i].value, RGB);
@@ -81,7 +84,10 @@ function rgbInit(){
                 for(var j = 0; j < 10; j++){
                     RGB = "";
                     if(j!= 0) RGB = j;
-                    if(rgbList[j].name == e.name) fChange(e.value, RGB);
+                    if(rgbList[j].name == e.name) {
+                        localStorage.setItem("rgb" + j, e.value);
+                        fChange(e.value, RGB);
+                    }
                 }
             }, false);
         }
@@ -125,7 +131,9 @@ function cpInit(){
             pList[j].addEventListener("click", function(){
                 var e =  event.srcElement;
                 for(var l = 0; l < 9; l++){
-                    if(pList[l].name == e.name) paste(l+1);
+                    if(pList[l].name == e.name) {
+                        paste(l+1);
+                    }
                 }
             }, false);
         }
