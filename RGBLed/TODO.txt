@@ -4,20 +4,19 @@ powerpoint
 planning
 Taakverdeling
 documentatie updaten
+ledstrip alternatieven
+planning
+taakverdeling
+samenvatting
+powerpoint
+sessies
 
 bryan
-inleiding lezen en toevoegen
-Technologieën > Raspberry Pi aanvullen
-Technologieën > LED strip
-Libraries
-C
-C++
+ledstrip inleiding
 Python
-Benodigde informatie
-Handleiding >Installatie
-
-
-Samenvatting
+planning
+taakverdeling
+samenvatting
 
 
 planning

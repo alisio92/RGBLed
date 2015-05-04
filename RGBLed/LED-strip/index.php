@@ -4,6 +4,8 @@
 include_once("functies.php");
 require_once('./thread.class.php');
 include('functions/functions.php');
+session_start();
+include('sessies.php');
 ?>
 <head>
     <link href="css/layout.css" rel="stylesheet"/>
