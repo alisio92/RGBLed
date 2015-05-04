@@ -45,3 +45,4 @@ Eerste script met variabelen
 
 wee4
 connectie wep app met C
+libaries kunnen installeren op Raspberry Pi
