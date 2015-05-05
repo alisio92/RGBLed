@@ -1,12 +1,4 @@
 alisio
-documentatie updaten
-ledstrip alternatieven
-samenvatting
+documentatie afprinten
 powerpoint
 
-bryan
-ledstrip inleiding
-Python
-planning
-taakverdeling
-samenvatting
