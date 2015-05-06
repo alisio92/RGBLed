@@ -75,4 +75,50 @@ if (isset($_POST['buttonAppart']))
     }
     $output= shell_exec("sudo ./Led2 LedStrip ".$data);
 }
+
+/*if(isset($_GET['function'])){
+    $myfile = fopen("test.txt", "w") or die("Unable to open file!");
+    $txt = $_GET['function'];
+    fwrite($myfile, $txt);
+    fclose($myfile);
+}*/
+
+if (isset($_POST['buttonContinueAan'])) {
+    /*ini_set('memory_limit', '-1');
+    ignore_user_abort(false);
+    doAction(true);*/
+    $_SESSION['disco'] = "aan";
+    echo '<meta http-equiv="refresh" content="0;URL='.$_SERVER['PHP_SELF'].'">';
+}
+
+if (isset($_POST['buttonContinueUit'])) {
+    /*ini_set('memory_limit', '-1');
+    ignore_user_abort(false);
+    doAction(true);*/
+    /*$_SESSION['test'] = "aan";
+    echo '<meta http-equiv="refresh" content="0;URL='.$_SERVER['PHP_SELF'].'">';*/
+    $_SESSION['disco'] = "uit";
+}
+
+/*if (isset($_POST['buttonTestAan'])) {
+    $_SESSION['test'] = "aan";
+    echo '<meta http-equiv="refresh" content="0;URL='.$_SERVER['PHP_SELF'].'">';
+}
+
+if (isset($_POST['buttonTestUit'])) {
+    $_SESSION['test'] = "uit";
+}*/
+
+function doAction($action){
+    if(!$action) return;
+    set_time_limit(10);
+
+    $myfile = fopen("test.txt", "r") or die("Unable to open file!");
+    $line = fgets($myfile);
+    fclose($myfile);
+    $pieces = explode(":", $line);
+    sleep(1);
+    if($pieces[0] == "aan") doAction($action);
+    else doAction(false);
+}
 ?>

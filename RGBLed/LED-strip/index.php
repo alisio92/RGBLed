@@ -1,15 +1,24 @@
 <?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
-<?php
-include_once("functies.php");
-?>
 <head>
     <link href="css/layout.css" rel="stylesheet"/>
+    <?php
+    if ($_SESSION['disco'] == 'aan') {
+        $data = "";
+        for($i = 0; $i < 27; $i++){
+            $random = "";
+            $random = rand(-1, 255);
+            $data = $data.$random. " ";
+        }
+        $output= shell_exec("sudo ./Led2 LedStrip ".$data);
+        echo '<meta http-equiv="refresh" content="1;URL='.$_SERVER['PHP_SELF'].'">';
+    }
+    ?>
 </head>
 <body>
 <div id="wrapper">
-    <form action="" method="post">
+    <form action="" method="post" id="submit">
         <fieldset id="aanuit">
             <legend>Aan & Uit</legend>
             <button type="submit" name="buttonAan">Aan</button>
@@ -73,11 +82,19 @@ include_once("functies.php");
                     </li>
                 <?php } ?>
             </ul>
-            <button type="submit" name="buttonAppart">Apart</button>
-            <button type="submit" name="buttonAppartRandom">Random</button>
+            <button type="submit" name="buttonAppart" id="buttonAppart">Apart</button>
+            <button type="submit" name="buttonAppartRandom" id="buttonAppartRandom">Random</button>
+            <button type="submit" name="buttonContinueAan" id="buttonContinueAan">Continue Aan</button>
+            <button type="submit" name="buttonContinueUit" id="buttonContinueUit">Continue Uit</button>
         </fieldset>
     </form>
 </div>
+<?php
+include_once("functies.php");
+?>
+<!--<script type="text/javascript" src="require.js"></script>
+<script type="text/javascript" src="socket.io/index.js"></script>-->
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
 <script type="text/javascript" src="jscolor/jscolor.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </body>

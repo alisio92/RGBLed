@@ -29,6 +29,9 @@ var p6 = document.getElementById("paste6");
 var p7 = document.getElementById("paste7");
 var p8 = document.getElementById("paste8");
 var p9 = document.getElementById("paste9");
+
+var continueAan = document.getElementById("buttonContinueAan");
+var continueUit = document.getElementById("buttonContinueUit");
 var cValue = 0;
 var rgbList = new Array();
 var cList = new Array();
@@ -37,6 +40,16 @@ var pList = new Array();
 function init(){
     rgbInit();
     cpInit();
+}
+
+function callPhpFunction(value) {
+    $.ajax({
+        //url: './php/ajax.php?function=' + nameFunction + '&param=' + param,
+        url: './test.php?function=' + value,
+        type: "GET",
+        success: function (data) {
+        }
+    });
 }
 
 function hexToR(h) {return parseInt((cutHex(h)).substring(0,2),16)}

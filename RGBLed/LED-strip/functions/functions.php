@@ -18,9 +18,10 @@
 		//mThread::invoke ('doSleep_showProgress',"Hello <b>$mrs</b> i'm sorry for sleeping for $sleep secs now "  . date('Y-m-d H:i:s') ) ;
 		//mThread::set_args($sleep);
 
-        while(true){
-            sleep( $sleep );
-        }
+        $myfile = fopen("test.txt", "w") or die("Unable to open file!");
+        $txt = $_GET['function'];
+        fwrite($myfile, $txt);
+        fclose($myfile);
 		
 	}
 	/*
